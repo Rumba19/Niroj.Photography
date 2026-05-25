@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photographer Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">Alex Photography</div>
+      <ul class="nav-menu">
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Capturing Moments, Creating Memories</h1>
+      <p>Professional photographer specializing in portraits and events</p>
+      <a href="#portfolio" class="btn btn-primary">View My Work</a>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/400x400?text=Portrait" alt="Portfolio 1">
+          <h3>Portrait Session</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/400x400?text=Wedding" alt="Portfolio 2">
+          <h3>Wedding Photography</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/400x400?text=Events" alt="Portfolio 3">
+          <h3>Event Coverage</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/400x400?text=Studio" alt="Portfolio 4">
+          <h3>Studio Work</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Hello! I'm a passionate photographer with over 10 years of experience capturing life's most important moments. I specialize in creating beautiful, timeless images that tell your unique story.</p>
+          <p>Whether it's a wedding, portrait session, or special event, I'm dedicated to delivering exceptional results with professionalism and creativity.</p>
+        </div>
+        <div class="about-image">
+          <img src="https://via.placeholder.com/300x300?text=Profile" alt="About">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Portrait Sessions</h3>
+          <p>Professional headshots and personal portraits tailored to your style.</p>
+        </div>
+        <div class="service-card">
+          <h3>Wedding Photography</h3>
+          <p>Complete coverage of your special day from ceremony to reception.</p>
+        </div>
+        <div class="service-card">
+          <h3>Event Coverage</h3>
+          <p>Capture the energy and emotion of corporate events and celebrations.</p>
+        </div>
+        <div class="service-card">
+          <h3>Product Photography</h3>
+          <p>High-quality images for your business and e-commerce needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p>"Alex's work was absolutely stunning. She captured every detail beautifully."</p>
+          <p class="author">- Sarah & John</p>
+        </div>
+        <div class="testimonial-card">
+          <p>"Professional, creative, and a joy to work with. Highly recommended!"</p>
+          <p class="author">- Maria</p>
+        </div>
+        <div class="testimonial-card">
+          <p>"The best investment we made for our wedding. Simply incredible."</p>
+          <p class="author">- The Johnson Family</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <div class="contact-content">
+        <p>Ready to book your session? Contact me today!</p>
+        <a href="mailto:contact@photographer.com" class="btn btn-primary">Email Me</a>
+        <p class="contact-info">
+          📧 contact@photographer.com<br>
+          📱 (555) 123-4567<br>
+          📍 Your City, State
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Alex Photography. All rights reserved.</p>
+  </footer>
+
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

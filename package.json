@@ -1,0 +1,11 @@
+{
+  "name": "photographer-portfolio",
+  "version": "1.0.0",
+  "description": "Photographer portfolio website with Decap CMS",
+  "scripts": {
+    "start": "npx http-server -p 8080 -c-1"
+  },
+  "keywords": ["photography", "portfolio", "cms"],
+  "author": "",
+  "license": "MIT"
+}
