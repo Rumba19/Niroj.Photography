@@ -252,12 +252,46 @@ section h2 {
   line-height: 2;
 }
 
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #000;
+}
+
 /* Footer */
 footer {
   background: #000;
   color: white;
   text-align: center;
   padding: 2rem;
+}
+
+footer .social-links {
+  margin-bottom: 1rem;
+}
+
+footer .social-link {
+  color: #aaa;
+}
+
+footer .social-link:hover {
+  color: white;
 }
 
 /* Responsive */
