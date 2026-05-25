@@ -7,7 +7,8 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: #e0e0e0;
+  background: #121212;
 }
 
 .container {
@@ -18,9 +19,9 @@ body {
 
 /* Navigation */
 .navbar {
-  background: white;
+  background: #1a1a1a;
   padding: 1rem 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -35,7 +36,7 @@ body {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #000;
+  color: #fff;
 }
 
 .nav-menu {
@@ -46,12 +47,12 @@ body {
 
 .nav-menu a {
   text-decoration: none;
-  color: #333;
+  color: #bbb;
   transition: color 0.3s;
 }
 
 .nav-menu a:hover {
-  color: #888;
+  color: #fff;
 }
 
 /* Hero Section */
@@ -66,7 +67,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .hero-content {
@@ -99,12 +100,12 @@ body {
 }
 
 .btn-primary {
-  background: #000;
-  color: white;
+  background: #fff;
+  color: #111;
 }
 
 .btn-primary:hover {
-  background: #333;
+  background: #ddd;
 }
 
 /* Sections */
@@ -116,12 +117,12 @@ section h2 {
   font-size: 2.5rem;
   margin-bottom: 3rem;
   text-align: center;
-  color: #000;
+  color: #fff;
 }
 
 /* Portfolio */
 .portfolio {
-  background: white;
+  background: #121212;
 }
 
 .portfolio-tabs {
@@ -134,9 +135,9 @@ section h2 {
 
 .tab-btn {
   padding: 0.6rem 1.6rem;
-  border: 2px solid #000;
+  border: 2px solid #555;
   background: transparent;
-  color: #000;
+  color: #ccc;
   font-size: 0.95rem;
   font-weight: 500;
   border-radius: 30px;
@@ -148,12 +149,13 @@ section h2 {
 .tab-btn:hover {
   background: #333;
   color: white;
-  border-color: #333;
+  border-color: #777;
 }
 
 .tab-btn.active {
-  background: #000;
-  color: white;
+  background: #fff;
+  color: #111;
+  border-color: #fff;
 }
 
 .tab-panel {
@@ -166,7 +168,7 @@ section h2 {
 
 .coming-soon {
   text-align: center;
-  color: #999;
+  color: #666;
   font-size: 1.1rem;
   padding: 3rem 0;
 }
@@ -179,7 +181,7 @@ section h2 {
 
 .gallery-item {
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
   transition: transform 0.3s;
   cursor: pointer;
 }
@@ -200,7 +202,7 @@ section h2 {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.92);
+  background: rgba(0,0,0,0.95);
   z-index: 1000;
   align-items: center;
   justify-content: center;
@@ -231,7 +233,7 @@ section h2 {
 
 /* About */
 .about {
-  background: #f9f9f9;
+  background: #1a1a1a;
 }
 
 .about-content {
@@ -244,13 +246,13 @@ section h2 {
 .about-text p {
   margin-bottom: 1rem;
   font-size: 1.1rem;
-  color: #555;
+  color: #aaa;
 }
 
 .about-image img {
   width: 100%;
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
 
 @media (max-width: 768px) {
@@ -261,7 +263,7 @@ section h2 {
 
 /* Services */
 .services {
-  background: white;
+  background: #121212;
 }
 
 .services-grid {
@@ -271,30 +273,31 @@ section h2 {
 }
 
 .service-card {
-  background: #f5f5f5;
+  background: #1e1e1e;
   padding: 2rem;
   border-radius: 8px;
   transition: all 0.3s;
+  border: 1px solid #2a2a2a;
 }
 
 .service-card:hover {
-  background: #e8e8e8;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  background: #252525;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
 
 .service-card h3 {
   margin-bottom: 1rem;
-  color: #000;
+  color: #fff;
 }
 
 .service-card p {
-  color: #666;
+  color: #888;
   line-height: 1.8;
 }
 
 /* Testimonials */
 .testimonials {
-  background: #f9f9f9;
+  background: #1a1a1a;
 }
 
 .testimonials-grid {
@@ -304,40 +307,40 @@ section h2 {
 }
 
 .testimonial-card {
-  background: white;
+  background: #222;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  border-left: 4px solid #000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  border-left: 4px solid #fff;
 }
 
 .testimonial-card p {
   margin-bottom: 1rem;
   font-style: italic;
-  color: #555;
+  color: #aaa;
 }
 
 .testimonial-card .author {
   font-weight: bold;
-  color: #000;
+  color: #fff;
   font-style: normal;
 }
 
 /* Contact */
 .contact {
-  background: white;
+  background: #121212;
   text-align: center;
 }
 
 .contact-content p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
-  color: #666;
+  color: #888;
 }
 
 .contact-info {
   margin-top: 2rem;
-  color: #666;
+  color: #888;
   line-height: 2;
 }
 
@@ -354,19 +357,19 @@ section h2 {
   align-items: center;
   gap: 0.5rem;
   text-decoration: none;
-  color: #333;
+  color: #aaa;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .social-link:hover {
-  color: #000;
+  color: #fff;
 }
 
 /* Footer */
 footer {
-  background: #000;
-  color: white;
+  background: #0a0a0a;
+  color: #aaa;
   text-align: center;
   padding: 2rem;
 }
@@ -376,7 +379,7 @@ footer .social-links {
 }
 
 footer .social-link {
-  color: #aaa;
+  color: #666;
 }
 
 footer .social-link:hover {
