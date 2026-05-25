@@ -6,7 +6,6 @@
   <title>Photographer Portfolio</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
   <!-- Navigation -->
@@ -149,7 +148,7 @@
       <h2>Get In Touch</h2>
       <div class="contact-content">
         <p>Ready to book your session? Contact me today!</p>
-        <a href="mailto:nirojmahato@gmail.com" class="btn btn-primary">Email Me</a>
+        <a href="mailto:nirojmahato@gmail.com" class="btn btn-primary" target="_blank">Email Me</a>
         <p class="contact-info">
           📧 nirojmahato@gmail.com<br>
           📱 (714) 756-6708<br>
@@ -234,16 +233,5 @@
     });
   </script>
 
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/";
-          });
-        }
-      });
-    }
-  </script>
 </body>
 </html>
