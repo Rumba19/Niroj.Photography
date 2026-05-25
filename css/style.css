@@ -134,10 +134,8 @@ section h2 {
   object-fit: cover;
 }
 
-.gallery-item h3 {
-  padding: 1rem;
-  background: #f5f5f5;
-  margin: 0;
+.gallery-item img {
+  display: block;
 }
 
 /* About */
