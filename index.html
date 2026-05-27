@@ -12,7 +12,12 @@
   <nav class="navbar">
     <div class="container">
       <div class="logo">Niroj Photography</div>
-      <ul class="nav-menu">
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
@@ -196,6 +201,24 @@
     <button class="lightbox-close" id="lightbox-close">&times;</button>
     <img id="lightbox-img" src="" alt="">
   </div>
+
+  <script>
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navMenu.classList.toggle('open');
+    });
+
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navMenu.classList.remove('open');
+      });
+    });
+  </script>
 
   <script>
     // Tabs
