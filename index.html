@@ -152,8 +152,13 @@
     <div class="container">
       <h2>Get In Touch</h2>
       <div class="contact-content">
-        <p>Ready to book your session? Contact me today!</p>
-        <a href="mailto:Niraj65mahatto@gmail.com" class="btn btn-primary" target="_blank">Email Me</a>
+        <p>Ready to book your session? Send a message and I'll get back to you!</p>
+        <form class="contact-form" action="https://formspree.io/f/mkoekezj" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Tell me about your shoot..." required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
         <p class="contact-info">
           📧 Niraj65mahatto@gmail.com<br>
           📱 (714) 756-6708<br>
